@@ -42,7 +42,7 @@ export default function Auth() {
   return (
     <div className="auth-container">
       <div className="auth-card">
-        <h2>{isSignUp ? 'Sign Up' : 'Sign In'}</h2>
+        <h2>{isSignUp ? 'Sign Up' : 'Log In'}</h2>
 
         <form onSubmit={handleAuth}>
           <div className="form-group">
@@ -76,7 +76,7 @@ export default function Auth() {
           )}
 
           <button type="submit" disabled={loading}>
-            {loading ? 'Loading...' : (isSignUp ? 'Sign Up' : 'Sign In')}
+            {loading ? 'Loading...' : (isSignUp ? 'Sign Up' : 'Log In')}
           </button>
         </form>
 
@@ -91,7 +91,7 @@ export default function Auth() {
               }}
               className="link-button"
             >
-              {isSignUp ? 'Sign In' : 'Sign Up'}
+              {isSignUp ? 'Log In' : 'Sign Up'}
             </button>
           </p>
         </div>
